@@ -81,6 +81,7 @@
             position: relative;
         }
         &__hamburger {
+            z-index: 10;
             display: block;
             position: fixed;
             right: 15px;
@@ -92,7 +93,7 @@
                 display: block;
                 height: 4px;
                 width: 100%;
-                background-color: #fff;
+                background-color: $main-color;
                 margin-bottom: 4px;
                 transition: 0.5s all;
             }
@@ -112,6 +113,7 @@
             }
         }
         &__menu {
+            z-index: 10;
             position: fixed;
             flex-direction: column;
             justify-content: center;
