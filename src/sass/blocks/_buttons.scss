@@ -1,0 +1,31 @@
+.btn {
+    display: block;
+    height: 45px;
+    padding: 0 23px;
+    background-color: $main-color;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    &:hover {
+        box-shadow: 3px 3px 20px $main-color;
+    }
+    &_big {
+        height: 57px;
+        font-size: 15px;
+        font-weight: 700;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .btn {
+        font-size: 10px;
+        &_big {
+            font-size: 15px;
+        }
+    }
+}

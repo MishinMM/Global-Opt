@@ -1,0 +1,190 @@
+@media (max-width: 1200px) {
+    .promo {
+        &__logo {
+            width: 70px;
+            height: 70px;
+        }
+        &__menu {
+            font-size: 13px;
+            &-divider {
+                margin: 0 8px;
+            }
+        }
+        &__titles {
+            &-title {
+                font-size: 67px;
+            }
+            &-subtitle {
+                font-size: 38px;
+            }
+        }
+        &__phone {
+            &-call {
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .promo {
+        &__header {
+            flex-direction: column;
+        }
+        &__navigation {
+            margin-top: 20px;
+        }
+        &__menu {
+            font-size: 18px;
+        }
+        &__cell {
+            width: 40%;
+        }
+        &__titles {
+            margin-top: 30px;
+            &-title {
+                font-size: 50px;
+            }
+            &-subtitle {
+                font-size: 30px;
+            }
+        }
+        &__item {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .promo {
+        &__header {
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+        &__logo {
+            margin-right: 40px;
+        }
+        &__cell {
+            width: 55%;
+        }
+        &__titles {
+            &-descr {
+                font-size: 18px;
+            }
+            &-title {
+                font-size: 37px;
+            }
+            &-subtitle {
+                font-size: 22px;
+            }
+        }
+        &__navigation {
+            position: relative;
+        }
+        &__hamburger {
+            display: block;
+            position: fixed;
+            right: 15px;
+            top: 15px;
+            width: 30px;
+            height: 21px;
+            cursor: pointer;
+            span {
+                display: block;
+                height: 4px;
+                width: 100%;
+                background-color: #fff;
+                margin-bottom: 4px;
+                transition: 0.5s all;
+            }
+            &_active {
+                span {
+                    margin-bottom: -4px;
+                    &:nth-child(1) {
+                        transform: translateY(4px) rotate(-45deg);
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        transform: translateY(4px) rotate(45deg);
+                    }   
+                }
+            }
+        }
+        &__menu {
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100vh;
+            padding: 20px 15px;
+            background-color: rgba(0,0,0, .8);
+            transition: 0.6s all;
+            &_active {
+                left: 0;
+            }
+            &-divider {
+                display: none;
+            }
+            &-item {
+                margin-top: 30px;
+            }
+            &-link {
+                font-size: 26px;
+            }
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0 40px 0;
+        }
+        &__item {
+            margin-top: 30px;
+            width: 50%;
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .promo {
+        &__logo {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+        }
+        &__cell {
+            width: 55%;
+            flex-direction: column;
+        }
+        &__phone {
+            margin-bottom: 10px;
+        }
+        &__titles {
+            &-descr {
+                font-size: 20px;
+            }
+            &-title {
+                font-size: 32px;
+            }
+            &-subtitle {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+        }
+        &__item {
+            width: 100%;
+            font-size: 20px;
+            margin-top: 40px;
+        }
+        &__menu {
+            &-link {
+                font-size: 18px;
+            }
+        }
+    }
+}
