@@ -5,4 +5,8 @@
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
+    &_white {
+        color: #fff;
+        text-transform: none;
+    }
 }
