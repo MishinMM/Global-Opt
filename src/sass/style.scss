@@ -39,6 +39,10 @@
     }
 }
 
+.map {
+    border: 2px solid $main-color;
+}
+
 @import 'blocks/buttons';
 @import 'blocks/titles';
 
@@ -53,3 +57,6 @@
 @import 'blocks/scheme';
 @import 'blocks/reviews';
 @import 'blocks/questions';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'blocks/pageup';

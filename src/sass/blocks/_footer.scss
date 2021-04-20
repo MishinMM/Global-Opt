@@ -1,0 +1,101 @@
+.footer {
+    min-height: 201px;
+    background-color: #25333c;
+    padding: 25px 0 40px 0;
+    &__info {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        &-logo {
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            &:hover {
+                box-shadow: 3px 3px 20px $main-color;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        &-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            text-align: left;
+            color: #fff;
+        }
+    }
+    &__call-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__call {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        margin-right: 15px;
+        &-title {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            text-align: right;
+        }
+        &-link {
+            color: #fff;
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: right;
+            text-decoration: none;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+    &__divider {
+        margin-top: 25px;
+        width: 100%;
+        height: 2px;
+        background-color: #efefef;
+    }
+    &__links {
+        padding: 25px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-policy {
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 17px;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+            &:hover {
+                color: $main-color;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        &__info {
+            &-title {
+                margin-top: 15px;
+                text-align: center;
+            }
+        }
+        &__call-wrapper {
+            margin-top: 15px;
+        }
+        &__call {
+            &-link {
+                font-size: 15px;
+            }
+        }
+    }
+}

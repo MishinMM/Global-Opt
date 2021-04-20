@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section class="promo" id="up">
         <div class="container">
             <header class="promo__header">
                 <div class="promo__logo">
-                    <a href="#" class="promo__logo-link"><img src="img/logo/logo_global_opt.png" alt="Logo"></a>
+                    <a href="index.html" class="promo__logo-link"><img src="img/logo/logo_global_opt.png" alt="Logo"></a>
                 </div>
                 <nav class="promo__navigation">
                     <ul class="promo__menu">
-                        <li class="promo__menu-item"><a href="#" class="promo__menu-link">Преимущества</a></li>
+                        <li class="promo__menu-item"><a href="#advantages" class="promo__menu-link">Преимущества</a></li>
                         <li class="promo__menu-divider"></li>
-                        <li class="promo__menu-item"><a href="#" class="promo__menu-link">Наша работа</a></li>
+                        <li class="promo__menu-item"><a href="#work" class="promo__menu-link">Наша работа</a></li>
                         <li class="promo__menu-divider"></li>
-                        <li class="promo__menu-item"><a href="#" class="promo__menu-link">Цены</a></li>
+                        <li class="promo__menu-item"><a href="#price" class="promo__menu-link">Цены</a></li>
                         <li class="promo__menu-divider"></li>
-                        <li class="promo__menu-item"><a href="#" class="promo__menu-link">Схема работы</a></li>
+                        <li class="promo__menu-item"><a href="#scheme" class="promo__menu-link">Схема работы</a></li>
                         <li class="promo__menu-divider"></li>
-                        <li class="promo__menu-item"><a href="#" class="promo__menu-link">Отзывы</a></li>
+                        <li class="promo__menu-item"><a href="#reviews" class="promo__menu-link">Отзывы</a></li>
                         <li class="promo__menu-divider"></li>
-                        <li class="promo__menu-item"><a href="#" class="promo__menu-link">Контакты</a></li>
+                        <li class="promo__menu-item"><a href="#questions" class="promo__menu-link">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="promo__hamburger">
@@ -39,7 +39,7 @@
                         <div class="promo__phone-text">Есть вопросы?</div>
                         <a href="tel:+79264230100" class="promo__phone-link"><div class="promo__phone-call">+7 (926) 423 01 00</div></a>
                     </div>
-                    <button class="btn">Перезвоните мне</button>
+                    <button data-modal="consultation" class="btn js-open-modal">Перезвоните мне</button>
                 </div>
             </header>
             <div class="promo__titles">
@@ -86,11 +86,11 @@
                     </div>
                 </div>
             </div>
-            <button class="btn btn_big">Получить расчет</button>
+            <button data-modal="consultation" class="btn btn_big js-open-modal">Получить расчет</button>
         </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="container">
             <h2 class="title">Преимущества работы с GlobalOpt</h2>
             <div class="advantages__wrapper">
@@ -170,7 +170,7 @@
         </div>
     </section>
 
-    <section class="work">
+    <section class="work" id="work">
         <div class="container">
             <h2 class="title">Наша работа - больше чем просто доставка</h2>
             <div class="work__divider"></div>
@@ -211,7 +211,7 @@
         </div>
     </section>
 
-    <section class="price">
+    <section class="price" id="price">
         <div class="container">
             <h2 class="title">Цены на любой вариант доставки</h2>
             <div class="price__divider"></div>
@@ -225,7 +225,7 @@
                     <div class="price__item-title">Доставка 35-50 дней</div>
                     <div class="price__item-subtitle">от 0,3$ за 1 кг</div>
                     <div class="price__item-descr">Морские перевозки грузов из Китая в Россию за 35 дней с прохождением таможни </div>
-                    <button class="btn price__item-btn">Подробнее</button>
+                    <button data-modal="consultation" class="btn price__item-btn js-open-modal">Подробнее</button>
                 </div>
                 <div class="price__item">
                     <div class="price__item-header">Ж/Д доставка</div>
@@ -235,7 +235,7 @@
                     <div class="price__item-title">Доставка 15-28 дней</div>
                     <div class="price__item-subtitle">от 1$ за 1 кг</div>
                     <div class="price__item-descr">ЖД перевозки грузов из Китая в Россию от 2 недель с прохождением таможни</div>
-                    <button class="btn price__item-btn">Подробнее</button>
+                    <button data-modal="consultation" class="btn price__item-btn js-open-modal">Подробнее</button>
                 </div>
                 <div class="price__item">
                     <div class="price__item-header">Автодоставка</div>
@@ -245,7 +245,7 @@
                     <div class="price__item-title">Доставка 12-20 дней</div>
                     <div class="price__item-subtitle">от 1$ за 1 кг</div>
                     <div class="price__item-descr">Автоперевозки грузов из Китая в Россию от 2 недель с прохождением таможни</div>
-                    <button class="btn price__item-btn">Подробнее</button>
+                    <button data-modal="consultation" class="btn price__item-btn js-open-modal">Подробнее</button>
                 </div>
                 <div class="price__item">
                     <div class="price__item-header">Авиадоставка</div>
@@ -255,7 +255,7 @@
                     <div class="price__item-title">Доставка 1-12 дней</div>
                     <div class="price__item-subtitle">от 6$ за 1 кг</div>
                     <div class="price__item-descr">Авиаперевозки грузов из Китая в Россию до 2 недель с прохождением таможни</div>
-                    <button class="btn price__item-btn">Подробнее</button>
+                    <button data-modal="consultation" class="btn price__item-btn js-open-modal">Подробнее</button>
                 </div>
             </div>
         </div>
@@ -268,9 +268,9 @@
                 <div class="consultation__form-img">
                     <img src="icons/consultation_icons/consultation_icon2.png" alt="Icon">
                 </div>
-                <input name="name" type="text" placeholder="Ваше имя...">
-                <input name="phone" type="text" placeholder="Ваш номер телефона...">
-                <input name="email" type="email" placeholder="Ваш e-mail...">
+                <input required name="name" type="text" placeholder="Ваше имя...">
+                <input required name="phone" type="text" placeholder="Ваш номер телефона...">
+                <input required name="email" type="email" placeholder="Ваш e-mail...">
                 <div class="consultation__form-btn">
                     <button type="submit" class="btn">Отправить заявку</button>
                 </div>
@@ -288,7 +288,7 @@
         </div>
     </section>
 
-    <section class="scheme">
+    <section class="scheme" id="scheme">
         <div class="container">
             <h2 class="title">Схема работы с нами</h2>
             <div class="scheme__wrapper-top">
@@ -361,7 +361,7 @@
         </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container">
             <h2 class="title">Отзывы наших клиентов</h2>
             <div class="reviews__divider"></div>
@@ -400,7 +400,7 @@
         </div>
     </section>
 
-    <section class="questions">
+    <section class="questions" id="questions">
         <div class="container">
             <div class="questions__wrapper">
                 <form action="#" class="questions__form">
@@ -410,9 +410,9 @@
                     </div>
                     <div class="questions__form-case">
                         <div class="questions__form-items">
-                            <input type="text" name="name" placeholder="Ваше имя...">
-                            <input type="text" name="phone" placeholder="Ваш номер телефона...">
-                            <input type="email" name="email" placeholder="Ваш e-mail...">
+                            <input required type="text" name="name" placeholder="Ваше имя...">
+                            <input required type="text" name="phone" placeholder="Ваш номер телефона...">
+                            <input required type="email" name="email" placeholder="Ваш e-mail...">
                         </div>
                         <textarea name="message" placeholder="Сообщение..."></textarea>
                         <button class="btn" type="submit">Отправить заявку</button>
@@ -421,7 +421,55 @@
             </div>
         </div>
     </section> 
-    
+
+    <section class="map">
+        <script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2fd4d30cc79ab23a56daf628bd5394627e63a8cd395c647f09c778b969f8dd4e&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__info">
+                <a href="index.html" class="footer__info-link">
+                    <div class="footer__info-logo">
+                        <img src="img/logo/logo_global_opt.png" alt="Logo">
+                    </div>
+                </a>
+                <div class="footer__info-title">
+                    Global Opt - Доставка грузов из Китая в Россию и СНГ
+                </div>
+                <div class="footer__call-wrapper">
+                    <div class="footer__call">
+                        <div class="footer__call-title">Есть вопросы?</div>
+                        <a href="tel:+79264230100" class="footer__call-link">+7 (926) 423 01 00</a>
+                    </div>
+                    <button data-modal="consultation" class="btn js-open-modal">Перезвоните мне</button>
+                </div> 
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__links">
+                <a href="#" class="footer__links-policy">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <section class="overlay" id="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close js-modal-close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним Вам в течении 10 минут</div>
+            <form action="#" class="modal__form">
+                <input required name="name" type="text" placeholder="Ваше имя...">
+                <input required name="phone" type="text" placeholder="Ваш номер телефона...">
+                <input required name="email" type="email" placeholder="Ваш e-mail...">
+                <button class="btn modal__form-button">Перезвоните мне</button>
+            </form>
+        </div>
+    </section>
+
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="Up">
+    </a>
+
     <script src="js/script.js"></script>
 </body>
 </html>
